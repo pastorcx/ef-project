@@ -33,6 +33,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: tsd-sw/hello-world
-        registry: ger-registry.caas.intel.com
+        tag: sha256:6a95ea2f2e19ed95eca65fdb8471a678b889022567d64b7073559661b2dcc3a8
+        registry: https://ger-registry.caas.intel.com/
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
